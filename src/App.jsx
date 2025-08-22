@@ -1,17 +1,33 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import Hero from './components/Hero'
 import gsap from 'gsap';
-import { ScrollTrigger, SplitText } from 'gsap/all';
+import { ScrollSmoother, ScrollTrigger, SplitText } from 'gsap/all';
+import WordAnimation from './components/WordAnimation';
+import { useGSAP } from '@gsap/react';
+import Video from './components/Video';
+import Building from './components/Building';
 
-gsap.registerPlugin(ScrollTrigger, SplitText);
+gsap.registerPlugin(ScrollTrigger, SplitText, ScrollSmoother);
 
 
 const App = () => {
-  return (
-    <main>
-        <Hero/>
-    </main>
-  )
+    useLayoutEffect(()=>{
+        ScrollSmoother.create({
+            smooth:1,
+        })
+    },[])
+    return (
+        <div id='smooth-wrapper'>
+            <div id='smooth-content'>
+                <main id='landing-page'>
+                    <Hero />
+                    <WordAnimation />
+                    <Video/>
+                    <Building/>
+                </main>
+            </div>
+        </div>
+    )
 }
 
 export default App

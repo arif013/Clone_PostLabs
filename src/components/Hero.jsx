@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroWrapper from './HeroWrapper'
+import { HeroWrapper, LineWrapper } from './Wrapper'
 import { useGSAP } from '@gsap/react'
 import { SplitText } from 'gsap/all'
 import gsap from 'gsap'
@@ -31,6 +31,8 @@ const Hero = () => {
   }, [])
   return (
     <>
+      {/* <LineWrapper> */}
+      
       <HeroWrapper>
         <nav className='z-1'>
           <div className='flex justify-between items-center py-[20px]'>
@@ -45,10 +47,12 @@ const Hero = () => {
             <img src="https://cdn.prod.website-files.com/681dfdff4444ca819f7050a2/68238111591ea94a69065212_Vector.svg" className='h-[200px]' alt="" />
           </div>
         </section>
-      <section className='pt-[40px]'> 
-        <Card/>
-      </section>
+        <section className='pt-[40px]'>
+          <Card />
+        </section>
       </HeroWrapper>
+      <LineWrapper />
+      {/* </LineWrapper> */}
 
     </>
   )

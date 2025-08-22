@@ -31,7 +31,7 @@ const Card = () => {
             // repeat: -1,
             rotation: -3,
             yoyo: true,
-            ease: 'power1.out',
+            ease: 'power1.inOut',
             duration: .4,
             scrollTrigger: {
                 trigger: "#cards",
@@ -44,7 +44,7 @@ const Card = () => {
             // repeat: -1,
             rotation: 3,
             yoyo: true,
-            ease: 'power1.out',
+            ease: 'power1.inOut',
             duration: .5,
             scrollTrigger: {
                 trigger: "#cards",
@@ -58,10 +58,10 @@ const Card = () => {
 
     },[])
   return (
-    <div id='cards' className='flex justify-center gap-[50px]'>
+    <div id='cards' className='flex justify-between gap-[44px] z-10 px-[40px]'>
         {data.map((item, index)=>{
             return<>
-            <div key={index} className={`flex flex-col h-[25vw]  p-[40px] bg-black justify-between rounded-[40px] ${item.class}`}>
+            <div key={index} className={`flex flex-col h-[30vw]  p-[40px] bg-black justify-between rounded-[40px] ${item.class}`}>
                 <img src={item.img} alt="" className='w-[74px]'/>
                 <h1 className='text-white text-[36px]'>{item.title}</h1>
             </div>
