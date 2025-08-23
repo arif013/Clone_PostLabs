@@ -29,8 +29,8 @@ const WordAnimation = () => {
         // <LineWrapper>
         <>
         <LineWrapper/>
-            <section id='word-animation' className='px-[40px] py-[400px] '>
-                <p className='px-[303px] text-[52px] text-center char-split leading-none '>Post Labs is rethinking how digital media works for Canadians. Our mission is simple: make journalism profitable, sustainable, and trusted – built for Canadians, by Canadians.</p>
+            <section id='word-animation' className='px-[40px] py-[120px] lg:py-[400px] '>
+                <p className='px-[10px] lg:px-[303px] text-[30px] lg:text-[52px] text-center char-split leading-none '>Post Labs is rethinking how digital media works for Canadians. Our mission is simple: make journalism profitable, sustainable, and trusted – built for Canadians, by Canadians.</p>
             </section>
         
         </>

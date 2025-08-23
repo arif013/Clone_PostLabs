@@ -20,7 +20,7 @@ const InvestorAndFooter = () => {
       <div>
         <div className='grid grid-cols-4'>
           <div className='col-span-2 py-[140px] pl-[40px] pr-[10px]'>
-            <h1 className='text-[116px]'>For Investors</h1>
+            <h1 className='text-[40px] lg:text-[116px] leading-none'>For Investors</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, dolorem.</p>
             <p>invest@postlab.com</p>
           </div>
@@ -32,7 +32,7 @@ const InvestorAndFooter = () => {
           <div></div>
           <div></div>
           <div className='col-span-2 py-[140px] px-[10px]'>
-            <h1 className='text-[116px]'>For Builders</h1>
+            <h1 className='text-[40px] lg:text-[116px] leading-none'>For Builders</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, debitis.</p>
             <p>careers@postlab.com</p>
           </div>

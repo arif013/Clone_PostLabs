@@ -26,23 +26,23 @@ const Building = () => {
     }, [])
     return (
         <section>
-            <div  className='animate-text text-[144px] px-[40px] py-[100px] leading-none '>What We're <br /> Building</div>
-                <div className='grid grid-cols-4 items-center py-[220px]'>
+            <div  className='animate-text text-[60px] lg:text-[144px] px-[40px] py-[100px] leading-none '>What We're <br /> Building</div>
+                <div className='grid grid-cols-4 items-center py-[100px] lg:py-[220px]'>
                     <div></div>
                     
-                        <p  className={`animate-text col-span-2 text-[36px]`}> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, magni laboriosam? </p>
+                        <p  className={`animate-text col-span-2 text-[25px] lg:text-[36px]`}> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, magni laboriosam? </p>
                         <div></div>
                 </div>
-                <div className='grid grid-cols-4 items-center py-[220px]'>
+                <div className='grid grid-cols-4 items-center py-[104px] lg:py-[220px]'>
                     <div></div>
                     <div></div>
                         <p  className={` animate-text col-span-2 text-[36px]`}> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, magni laboriosam? </p>
                         
                 </div>
-                <div className='grid grid-cols-4 items-center py-[220px]'>
+                <div className='grid grid-cols-4 items-center py-[100px] lg:py-[220px]'>
                     <div></div>
                     
-                        <p  className={` animate-text col-span-2 text-[36px]`}> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, magni laboriosam? </p>
+                        <p  className={` animate-text col-span-2 text-[25px] lg:text-[36px]`}> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, magni laboriosam? </p>
                         <div></div>
                 </div>
             <div>

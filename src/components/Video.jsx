@@ -4,6 +4,7 @@ import gsap from 'gsap/all'
 import {ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const Video = () => {
+    const isMobile = window.innerWidth < 900
     useGSAP(()=>{
         gsap.fromTo("video",
             { width: "40vw", borderRadius: "30px"},

@@ -58,12 +58,12 @@ const Card = () => {
 
     },[])
   return (
-    <div id='cards' className='flex justify-between gap-[44px] z-10 px-[40px]'>
+    <div id='cards' className='flex justify-between gap-[1px] lg:gap-[44px] z-10 px-[5px] lg:px-[40px] '>
         {data.map((item, index)=>{
             return<>
-            <div key={index} className={`flex flex-col h-[30vw]  p-[40px] bg-black justify-between rounded-[40px] ${item.class}`}>
-                <img src={item.img} alt="" className='w-[74px]'/>
-                <h1 className='text-white text-[36px]'>{item.title}</h1>
+            <div key={index} className={`flex flex-col h-[285px] lg:h-[30vw] p-[22px] lg:p-[40px] bg-black justify-between rounded-[40px] ${item.class} `}>
+                <img src={item.img} alt="" className='w-[42px] lg:w-[74px]'/>
+                <h1 className='text-white text-[25px] lg:text-[36px]'>{item.title}</h1>
             </div>
             
             </>
