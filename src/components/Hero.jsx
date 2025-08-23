@@ -51,7 +51,7 @@ const Hero = () => {
           <Card />
         </section>
       </HeroWrapper>
-      <LineWrapper />
+      {/* <LineWrapper /> */}
       {/* </LineWrapper> */}
 
     </>

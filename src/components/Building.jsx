@@ -22,15 +22,6 @@ const Building = () => {
                     toggleActions: "play none none none"
                 }
             })
-            
-        //     gsap.timeline({
-        //         scrollTrigger: {
-        //         trigger: el,
-        //         start: "top 50%",
-        //         end: "bottom top",
-        //         scrub: true
-        //     }
-        // })
     })
     }, [])
     return (

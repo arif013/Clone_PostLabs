@@ -7,6 +7,7 @@ import { useGSAP } from '@gsap/react';
 import Video from './components/Video';
 import Building from './components/Building';
 import ParallaxVideo from './components/ParallaxVideo';
+import InvestorAndFooter from './components/InvestorAndFooter';
 
 gsap.registerPlugin(ScrollTrigger, SplitText, ScrollSmoother);
 
@@ -20,15 +21,17 @@ const App = () => {
     return (
         <div id='smooth-wrapper'>
             <div id='smooth-content'>
-                <main id='landing-page'>
+                <main id='landing-page '>
                     <Hero />
                     <WordAnimation />
                     <Video />
                     <Building />
                     <ParallaxVideo />
+
                     {/* <div className="h-[200vh] bg-gray-900 text-white flex items-center justify-center text-4xl">
                         Next Page Content 🚀
                     </div> */}
+                    <InvestorAndFooter/>
                 </main>
             </div>
         </div>

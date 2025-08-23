@@ -32,7 +32,7 @@ const HeroWrapper = ({ children }) => {
 }
 
 
-const LineWrapper = ({ children }) => {
+const LineWrapper = () => {
     const width = window.innerWidth
     return (
         <>
