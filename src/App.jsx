@@ -26,9 +26,9 @@ const App = () => {
                     <Video />
                     <Building />
                     <ParallaxVideo />
-                    <div className="h-[200vh] bg-gray-900 text-white flex items-center justify-center text-4xl">
+                    {/* <div className="h-[200vh] bg-gray-900 text-white flex items-center justify-center text-4xl">
                         Next Page Content 🚀
-                    </div>
+                    </div> */}
                 </main>
             </div>
         </div>
