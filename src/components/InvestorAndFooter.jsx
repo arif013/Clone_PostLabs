@@ -27,25 +27,23 @@ const InvestorAndFooter = () => {
     })
   },[])
 
-  // Track scroll progress of the wrapper
+  
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start start", "end end"] // triggers when section enters/leaves viewport
+    offset: ["start start", "end end"] 
   })
 
-  // Map scroll to a "shutter reveal" effect
-  // Starts fully covering footer (100%) -> reveals it (0%)
+  
   const revealHeight = useTransform(
     scrollYProgress,
-    [0, 1],         // keyframes
-    ["100%",  "0%"] // values
+    [0, 1],         
+    ["100%",  "0%"] 
   )
   
   
 
   return (
     <div ref={ref} className="relative">
-      {/* Main content */}
       <div>
         <div className='lg:grid grid-cols-4'>
           <div className='lg:col-span-2 pt-[140px] lg:pt-[140] pb-[70px] lg:pb-[140px] pl-[10px] lg:pl-[40px] pr-[10px]'>
@@ -68,9 +66,7 @@ const InvestorAndFooter = () => {
         </div>
       </div>
 
-      {/* Footer section */}
       <div className="relative">
-        {/* Black footer content */}
         <section className='sticky h-[80vh] bg-black text-white lg:grid lg:grid-cols-4 z-0'>
           <img 
             src="https://cdn.prod.website-files.com/681dfdff4444ca819f7050a2/682786273e6c31f3343c6700_postlabs-logo-white.svg" 
@@ -89,7 +85,6 @@ const InvestorAndFooter = () => {
           <p>Designed by Arif</p>
         </div>
 
-        {/* Motion shutter overlay */}
         <motion.div 
           className="absolute inset-0 bg-white z-10" 
           style={{ height: revealHeight, bottom: 0 }}

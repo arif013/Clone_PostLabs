@@ -24,10 +24,10 @@ const data = [
 ]
 
 const Card = () => {
-
-    useGSAP(()=>{
+    const isMobile = window.innerWidth < 900
+    useGSAP(()=>{   
         gsap.from('.left', {
-            x: 420,
+            x: isMobile ? 120 : 520,
             // repeat: -1,
             rotation: -3,
             yoyo: true,
@@ -40,7 +40,7 @@ const Card = () => {
               },
         })
         gsap.from('.right', {
-            x: -420,
+            x: isMobile ? -120 : -540,
             // repeat: -1,
             rotation: 3,
             yoyo: true,

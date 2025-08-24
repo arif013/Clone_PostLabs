@@ -41,9 +41,7 @@ const LineWrapper = () => {
                     <div className="absolute top-[80px] left-0 w-full h-px bg-gray-400 z-0" />
                 ) : ""
             }
-            <div className="absolute top-0 left-1/4 h-full w-px bg-gray-300 z-0" />
-            <div className="absolute top-0 left-1/2 h-full w-px bg-gray-300 z-0" />
-            <div className="absolute top-0 left-3/4 h-full w-px bg-gray-300 z-0" />
+
             
             {/* <div className='z-1'>
                 {children}

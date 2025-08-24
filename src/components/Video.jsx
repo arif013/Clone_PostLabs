@@ -1,7 +1,6 @@
 import { useGSAP } from '@gsap/react'
 import React from 'react'
 import gsap from 'gsap/all'
-import {ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const Video = () => {
     const isMobile = window.innerWidth < 900

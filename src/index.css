@@ -1,1 +1,53 @@
-@import 'tailwindcss'
+@import 'tailwindcss';
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 25%;
+  width: 1px;
+  height: 100vh;
+  background-color: #d1d5db;
+  z-index: -1; 
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100vh;
+  background-color: #d1d5db;
+  z-index: -1;
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 75%;
+  width: 1px;
+  height: 100vh;
+  background-color: #d1d5db;
+  z-index: -1;
+}
+
+.animate-float{
+  animation: float 3s ease-in-out infinite;
+  position: relative;
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-20px);
+  }
+
+  100% {
+      transform: translateY(0);
+  }
+}
