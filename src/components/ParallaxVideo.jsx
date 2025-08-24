@@ -36,7 +36,7 @@ const ParallaxVideo = () => {
       </section> */}
 
       {/* Sticky Section */}
-      <section ref={ref} className="relative h-[300vh] bg-white">
+      <section ref={ref} className="relative h-[330vh] bg-white">
         <div className="sticky top-0 h-screen overflow-hidden flex items-center justify-center">
           {/* Videos */}
           {vidArr.map((item, index) => (
@@ -46,7 +46,7 @@ const ParallaxVideo = () => {
               muted
               loop
               autoPlay
-              className="absolute inset-0 w-[100vw] h-[100vh] object-cover"
+              className="absolute inset-0 w-[110vw] h-[110vh] object-cover"
               style={{ opacity: opacities[index] }}
             />
           ))}
